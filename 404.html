@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>404 Page Not Found</title>
-    <meta http-equiv="refresh" content="3;url=https://blog.rmtph.one{REQUEST_URI}">
-    <script>
-      window.location.href = "https://blog.rmtph.one{REQUEST_URI}"
-    </script>
-  </head>
-  <body>
-    <h1>Sorry, I've moved</h1>
-    <p>Sorry, I've moved my domain, you'll be redirected shortly.</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; URL=https://blog.rmtph.one%7Bwindow.location.pathname}">
+  <script type="text/javascript">
+    window.location.href = "https://blog.rmtph.one/" + window.location.pathname;
+  </script>
+  <title>Redirecting...</title>
+</head>
+
+<body>
+  If you are not redirected automatically, follow this <a
+    href="ttps://blog.rmtph.one{window.location.pathname}">link</a>.
+</body>
+
 </html>
